@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            height: 100px;
+            width: 100%;
+            position: relative;
+            position: fixed;
+            background-color: white;
+        }
+
+        .logo {
+            height: 30px;
+            width: 10%;
+            position: absolute;
+            top: 40px;
+            left: 50px;
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .navlist {
+            height: 30px;
+            width: 28%;
+            position: absolute;
+            top: 40px;
+            right: 120px;
+        }
+
+        .list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .bar {
+            height: 30px;
+            width: 3%;
+            position: absolute;
+            right: 60px;
+            top: 40px;
+        }
+
+        .section1 {
+            height: 450px;
+            width: 100%;
+            background-image: url(./images/1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 1px;
+        }
+
+        .tex {
+            height: max-content;
+            width: 600px;
+            margin: auto;
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .text {
+            height: 80px;
+            width: 600px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .para {
+            font-size: 55px;
+            font-weight: bold;
+        }
+
+        .para1 {
+            color: rgb(237, 79, 78);
+        }
+
+        .para2 {
+            margin-top: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .section2 {
+            height: 450px;
+            width: 100%;
+            background-image: url(./images/2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 1px;
+        }
+
+        .para4 {
+            color: rgb(238, 240, 145);
+        }
+
+        .section3 {
+            height: 450px;
+            width: 100%;
+            background-image: url(./images/3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 1px;
+        }
+
+        .tex1 {
+            height: max-content;
+            width: 740px;
+            margin: auto;
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .text1 {
+            height: 80px;
+            width: 740px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .para5 {
+            color: rgb(1, 102, 213);
+        }
+        .section4 {
+            height: 450px;
+            width: 100%;
+            background-image: url(./images/4.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 1px;
+        }
+        .para6{
+            color: rgb(85,216,146);
+        }
+        .section5{
+            height: 450px;
+            width: 100%;
+            background-image: url(./images/5.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 1px;
+        }
+        .para7{
+            color: rgb(236,94,178);
+        }
+        .section6{
+            height: 450px;
+            width: 100%;
+            background-image: url(./images/6.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 1px;
+        }
+        .para8{
+            color:rgb(132,65,142);
+        }
+        .index {
+            height: 250px;
+            width: 100%;
+            background-color: rgb(244, 249, 255);
+            padding: 1px ;
+        }
+        .logo1{
+            height: 40px;
+            width: 11%;
+            margin: auto;
+            margin-top: 80px;
+        }
+        .paraa{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .icons1{
+            height: 30px;
+            width: 10%;
+            display: flex;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .ball{
+            height: 100%;
+            width: 20%;
+
+        }
+        .fb{
+            height: 100%;
+            width: 20%;
+
+        }
+        .twitter{
+            height: 100%;
+            width: 20%;
+
+        }
+        .pinterest{
+            height: 100%;
+            width: 20%;
+
+        }
+        .google{
+            height: 100%;
+            width: 20%;
+
+        }
+        @media screen and (max-width:965px){
+            .logo{
+                width: 15%;
+                height: 40px;
+                top: 30px;
+            }
+            .navlist{
+                width: 45%;
+            }
+            .list{
+                font-size: 16px;
+            }
+            .section1{
+                height: 900px;
+            }
+            .tex{
+                margin-top: 400px;
+            }
+            .section2{
+                height: 900px;
+            }
+            .section3{
+                height: 900px;
+            }
+            .tex1{
+                margin-top: 400px;
+            }
+            .section4{
+                height: 900px;
+            }
+            .section5{
+                height: 900px;
+            }
+            .section6{
+                height: 900px;
+            }
+            .logo1{
+                height: 40px;
+                width: 15%;
+            }
+            .paraa{
+                font-size: 16px;
+            }
+            .icons1{
+                width: 20%;
+            }
+            .para {
+            font-size: 45px;
+            font-weight: bold;
+        }
+            .tex1 {
+            height: max-content;
+            width: 680px;
+            margin: auto;
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .text1 {
+            height: 80px;
+            width: 680px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        }
+        @media screen and (max-width:900px){
+            .para {
+            font-size: 40px;
+            font-weight: bold;
+        }
+            .tex1 {
+            height: max-content;
+            width: 640px;
+            margin: auto;
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .text1 {
+            height: 80px;
+            width: 640px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            
+        }
+        @media screen and (max-width:840px){
+        
+            .tex1 {
+            height: max-content;
+            width: 600px;
+            margin: auto;
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .text1 {
+            height: 80px;
+            width: 600px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img class="img" src="./images/logo.png" alt="">
+        </div>
+        <div class="navlist">
+            <ul class="list">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>PORTFOLIO</li>
+                <li>BLOG</li>
+                <li>CONTACT US</li>
+            </ul>
+        </div>
+        <div class="bar">
+            <i class="fa-solid fa-bars" style="color: #262627;"></i>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="tex">
+            <div class="text" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
+                <p class="para"><b class="para1">CREATIVE</b> DESIGN</p>
+            </div>
+            <p class="para2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">Branding Design</p>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="tex">
+            <div class="text" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
+                <p class="para"><b class="para4">MODERN</b> DESIGN</p>
+            </div>
+            <p class="para2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">Branding Design</p>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="tex1">
+            <div class="text1" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
+                <p class="para"><b class="para5">BRANDING</b> COLLECTION</p>
+            </div>
+            <p class="para2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">Branding Design</p>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="tex">
+            <div class="text" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
+                <p class="para"><b class="para6">CUP OF</b> COFFEE</p>
+            </div>
+            <p class="para2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">Branding Design</p>
+        </div>
+    </div>
+    <div class="section5">
+        <div class="tex">
+            <div class="text" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
+                <p class="para"><b class="para7">MINIMAL</b> DESIGN</p>
+            </div>
+            <p class="para2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">Branding Design</p>
+        </div>
+    </div>
+    <div class="section6">
+        <div class="tex1">
+            <div class="text1" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
+                <p class="para"><b class="para8">RESTARUNT</b> COLLECTION</p>
+            </div>
+            <p class="para2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">Branding Design</p>
+        </div>
+    </div>
+    <div class="index">
+        <div class="logo1">
+            <img class="img" src="./images/footer-logo.png" alt="">
+        </div>
+        <p class="paraa">© Copyright 2019 Limerick. All Rights Reserved</p>
+        <div class="icons1">
+            <div class="ball">
+                <i class="fa-brands fa-square-snapchat" style="color: #161717;"></i>
+            </div>
+            <div class="fb">
+                <i class="fa-brands fa-facebook-f" style="color: #121212;"></i>
+            </div>
+            <div class="twitter">
+                <i class="fa-brands fa-twitter" style="color: #1f1f1f;"></i>
+            </div>
+            <div class="google">
+                <i class="fa-brands fa-google-plus-g" style="color: #242424;"></i>
+            </div>
+            <div class="pinterest">
+                <i class="fa-brands fa-pinterest-p" style="color: #161717;"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
